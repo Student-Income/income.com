@@ -17,7 +17,7 @@ h1{font-size:17px;font-weight:bold;margin-bottom:4px;}
 .feature:hover{background:#d0f6e5;}
 .feature-icon{width:32px;height:32px;border-radius:50%;background:#16a085;color:#fff;display:flex;align-items:center;justify-content:center;margin-right:9px;font-size:15px;}
 .feature-text{font-size:14px;color:#2c3e50;font-weight:500;}
-.download-btn{display:block;width:100%;text-align:center;background:linear-gradient(135deg,#27ae60,#2ecc71);color:#fff;text-decoration:none;border-radius:12px;padding:14px;font-size:15px;font-weight:bold;box-shadow:0 5px 14px rgba(39,174,96,0.4);transition:0.3s;margin-top:12px;}
+.download-btn{display:block;width:100%;text-align:center;background:linear-gradient(135deg,#27ae60,#2ecc71);color:#fff;border:none;border-radius:12px;padding:14px;font-size:15px;font-weight:bold;box-shadow:0 5px 14px rgba(39,174,96,0.4);transition:0.3s;margin-top:12px;cursor:pointer;}
 .download-btn:hover{transform:translateY(-2px);box-shadow:0 7px 18px rgba(39,174,96,0.6);}
 .file-info{font-size:13px;color:#7f8c8d;margin-top:7px;text-align:center;}
 .instructions{background:#f9fdfc;padding:12px;border-radius:11px;margin-top:14px;border:1px solid #d8f1eb;}
@@ -42,7 +42,7 @@ h1{font-size:17px;font-weight:bold;margin-bottom:4px;}
     <div class="feature"><div class="feature-icon">✅</div><div class="feature-text">৮ টি রেফার করলেই Withdraw করা যায় ৫০০ টাকা</div></div>
     <div class="feature"><div class="feature-icon">📱</div><div class="feature-text">মোবাইল রিচার্জ বা বিকাশে টাকা withdraw করুন</div></div>
 
-    <a href="https://tetnykcmkukjukttluks.supabase.co/storage/v1/object/public/Student%20wallet/Studentincome+.apk" class="download-btn" download="Studentincome+.apk" onclick="startDownload()">📥 এখনই ডাউনলোড করুন</a>
+    <button class="download-btn" onclick="window.location.href='https://tetnykcmkukjukttluks.supabase.co/storage/v1/object/public/Student%20wallet/Studentincome+.apk'">📥 এখনই ডাউনলোড করুন</button>
     <div class="download-status" id="downloadStatus"></div>
     <div class="file-info">ফাইল সাইজ: 1 MB | ভার্সন: 1.1 | এক ক্লিকে ডাউনলোড</div>
 
@@ -51,23 +51,15 @@ h1{font-size:17px;font-weight:bold;margin-bottom:4px;}
       <ol>
         <li>ডাউনলোড বাটনে ক্লিক করুন।</li>
         <li>APK ডাউনলোড হলে Open করুন।</li>
-        <li>“Unknown Sources” অনুমতি দিন।</li>
+        <li>"Unknown Sources" অনুমতি দিন।</li>
         <li>Install বাটনে ক্লিক করুন।</li>
         <li>ইন্সটল হয়ে গেলে Open করুন।</li>
       </ol>
     </div>
 
-    <div class="warning">⚠️ নোট: “Unknown Sources” enable করতে হতে পারে। এটি নিরাপদ।</div>
+    <div class="warning">⚠️ নোট: "Unknown Sources" enable করতে হতে পারে। এটি নিরাপদ।</div>
     <div class="footer">© 2025 POCKET INCOME — সকল অধিকার সংরক্ষিত।</div>
   </div>
 </div>
-
-<script>
-function startDownload(){
-  const status=document.getElementById('downloadStatus');
-  status.textContent='📦 ডাউনলোড শুরু হয়েছে...';
-  setTimeout(()=>{status.textContent='✅ ডাউনলোড সম্পন্ন হলে APK ইন্সটল করুন';},1500);
-}
-</script>
 </body>
 </html>
